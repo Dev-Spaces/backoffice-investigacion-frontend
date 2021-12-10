@@ -1,7 +1,5 @@
 import MaterialTable from "material-table";
 
-
-
 function Usuarios(){
     
     const columnas =[
