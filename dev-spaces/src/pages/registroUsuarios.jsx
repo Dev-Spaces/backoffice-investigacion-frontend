@@ -1,6 +1,6 @@
 import MaterialTable from "material-table";
 
-function Usuarios(){
+function RegistroUsuarios(){
     
     const columnas =[
         {
@@ -39,16 +39,16 @@ function Usuarios(){
         <div>
             <MaterialTable columns={columnas}
             data = {data}
-            title="Usuarios"
+            title="Registro de usuarios"
             actions={[
              {
               icon: 'edit',
-              tooltip: 'Editar usuario',
+              tooltip: 'Agregar usuario',
               onclick: (event, rowData)=>alert('Has presionado editar al usuario: ' + rowData.usuario)
              },
              {
               icon: 'delete',
-              tooltip: 'Eliminar usuario',
+              tooltip: 'Eliminar registo de usuario',
               onclick: (event, rowData)=>window.confirm('Estas seguro de que deseas eliminar al usuario: ' + rowData.usuario+'?')
              }
             ]}
@@ -65,4 +65,4 @@ function Usuarios(){
     );
 }
 
-export default Usuarios;
+export default RegistroUsuarios;
