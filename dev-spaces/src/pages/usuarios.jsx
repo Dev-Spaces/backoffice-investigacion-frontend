@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import MaterialTable from "material-table";
+
+
 
 function Usuarios(){
     
@@ -40,6 +41,27 @@ function Usuarios(){
         <div>
             <MaterialTable columns={columnas}
             data = {data}
+            title="Usuarios"
+            actions={[
+             {
+              icon: 'edit',
+              tooltip: 'Editar usuario',
+              onclick: (event, rowData)=>alert('Has presionado editar al artista: ' + rowData.usuario)
+             },
+             {
+              icon: 'delete',
+              tooltip: 'Eliminar usuario',
+              onclick: (event, rowData)=>window.confirm('Estas seguro de que deseas eliminar al artista: ' + rowData.usuario+'?')
+             }
+            ]}
+            options={{
+                actionsColumnIndex: -1
+            }}
+            localization={{
+                header:{
+                    actions: 'Acciones'
+                }
+            }}
             />
         </div>
     );
