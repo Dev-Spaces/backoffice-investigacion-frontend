@@ -3,10 +3,7 @@ import Logo from 'media/logo.jpeg'
 import { Link } from 'react-router-dom'
 import Menu from 'media/menu.png'
 
- const btn = document.querySelector("button.mobile-menu-button");
- const menu = document.querySelector(".mobile-menu");
-
-const Navbar = () => {
+const NavbarLogin = () => {
     return (
         <nav className='bg-blue-700'>
             <div className=' max-w-6xl mx-auto px-8'>
@@ -25,9 +22,9 @@ const Navbar = () => {
                     </div>
 
                     <div className='hidden md:flex items-center space-x-1 px-4'>
-                    <Link to ='/login'>
+                    <Link to ='/'>
                         <a href="#" className='py-3 px-3 bg-red-300 hover:bg-red-400 text-red-900 
-                        hover:text-red-800 rounded-xl transition duration-300'>Inicio de sesion</a>
+                        hover:text-red-800 rounded-xl transition duration-300'>Inicio</a>
                     </Link>
                     </div>
 
@@ -45,12 +42,7 @@ const Navbar = () => {
                 <a href="https://www.misiontic2022.gov.co/portal/" className='block py-2 px-4 text-sm hover:bg-blue-300 rounded'>MisioTic</a>
             </div>
         </nav>
-        
     )
 }
 
-// btn.addEventListener("click", () => {
-//     menu.classList.toggle("hidden");
-//   });
-
-export default Navbar
+export default NavbarLogin
