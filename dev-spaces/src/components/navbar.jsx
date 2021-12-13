@@ -49,7 +49,7 @@ const Navbar = () => {
     )
 }
 
-// btn.addEventListener("click", () => {
+//btn.addEventListener("click", () => {
 //     menu.classList.toggle("hidden");
 //   });
 

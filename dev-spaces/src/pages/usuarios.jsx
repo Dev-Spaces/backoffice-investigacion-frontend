@@ -35,6 +35,10 @@ function Usuarios(){
 
 
     return(
+        
+        <>
+        <div className='bg-blue-500 '>
+            <h1>Tabla de usuarios</h1>
         <div>
             <MaterialTable columns={columnas}
             data = {data}
@@ -61,6 +65,10 @@ function Usuarios(){
             }}
             />
         </div>
+        </div>
+        </>
+        
+        
     );
 }
 

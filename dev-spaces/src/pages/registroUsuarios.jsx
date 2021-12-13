@@ -1,6 +1,9 @@
 import MaterialTable from "material-table";
 
+
+
 function RegistroUsuarios(){
+    
     
     const columnas =[
         {

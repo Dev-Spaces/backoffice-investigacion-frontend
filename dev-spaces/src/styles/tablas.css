@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: helvetica, sans-serif;
+}
+
+html {
+	font-size: 65%;
+}
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f3f8fa;
+}
+
+.main-title {
+	padding: 6px;
+	margin: 50px 0px;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+
+.search-add {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.search-add:hover {
+	transform: scale(1.2);
+}
+
+.search-section {
+	width: 90%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.search-container {
+	width: 310px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	border: 1px solid #0a56c7; 
+	border-radius: 15px;
+	justify-content: center;
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+.search-container:hover {
+	transform: scale(1.2);
+}
+
+
+.search-container img {
+	width: 15px;
+	height: 15px;
+	margin-right: 100px;
+}
+
+
+.search-container__form input {
+	width: 170px;
+	outline: none;
+	border: none;
+}
+
+.main-container__table {
+	padding: 20px;
+}
+
+.main-container__table td {
+	width: 250px;
+	height: 120px;
+	padding: 12px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.9rem;
+	color: #3e3f3f;
+	text-align: center;
+	background-color: #ffff;
+}
+
+.table__top-left {
+	border-radius: 15px 0 0 0;
+}
+
+.table__top-rigth {
+	border-radius: 0 15px 0 0;
+}
+
+.table__bottom-right {
+	border-radius: 0 0 0 15px;
+}
+
+.table__bottom-left {
+	border-radius: 0 0 15px 0;
+}
+
+.main-container__table .top {
+	background: linear-gradient(#6e97d3, #1f83aa);
+	color: white;
+	font-weight: bold;
+}
+
+.button-edit {
+	width: 45px;
+	height: 45px;
+}
+
+.button-edit:hover {
+    transform: scale(1.2);
+}
+
+.button-product {
+	width: 284px;
+	height: 100px;
+	margin-top: 0px;
+	font-family: Helvetica, sans-serif;
+	background: #ecf0f3;
+	border: none;
+	cursor: pointer;
+	border-radius: 50px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #0a56c7;
+	text-shadow: -2px -2px 5px #fff, 2px 2px 5px #d1d9e6;
+	box-shadow: -18px -18px 30px #fff, 18px 18px 30px #d1d9e6, inset 0 0 0 transparent, inset  0 0 0 transparent;
+	transition: all 0.3s ease-out;
+  }
+  
+  button:active {
+	box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset -18px -18px 30px #fff, inset 18px 18px 30px #d1d9e6;
+  }
+  
+  button:focus {
+	outline: none;
+  }

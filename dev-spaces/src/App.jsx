@@ -2,8 +2,12 @@ import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import 'styles/styles.css';
 import Inicio from 'pages/inicio';
 import Usuarios from 'pages/usuarios';
+import EditarUsuarios from "pages/editarUsuarios";
+import RegistroUsuarios from "pages/registroUsuarios";
 import Login from 'pages/login'
 import PublicLayout from 'layout/publicLayout';
+import AddUser from "pages/agregarUsuario";
+import UsersMaster from "pages/usersMasters";
 
 
 
@@ -17,7 +21,10 @@ function App() {
             <Route path= {"/login"} element={<Login/>}/>
             <Route path="/usuarios" element={<Usuarios/>}/>
             <Route path="/editarUsuarios" element={<EditarUsuarios/>}/>
-            <Route path="/RegistrarUsuarios" element={<RegistrarUsuarios/>}/>
+            <Route path="/registroUsuarios" element={<RegistroUsuarios/>}/>
+            <Route path="/agregarUsuario" element={<AddUser/>}/>
+            <Route path="/usersMasters" element={<UsersMaster/>}/>
+            
           {/* <Route element ={<PublicLayout/>}/> */}
         </Routes>
       </Router>
