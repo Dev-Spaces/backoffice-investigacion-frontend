@@ -44,12 +44,12 @@ function EditarUsuarios(){
              {
               icon: 'edit',
               tooltip: 'Editar usuario',
-              onclick: (event, rowData)=>alert('Has presionado editar al usuario: ' + rowData.usuario)
+              onclick: (event, rowData)=>alert('Has presionado editar al usuario: '+rowData.nombre)
              },
              {
               icon: 'delete',
               tooltip: 'Eliminar registo de usuario',
-              onclick: (event, rowData)=>window.confirm('Estas seguro de que deseas eliminar al usuario: ' + rowData.usuario+'?')
+              onclick: (event, rowData)=>window.confirm('Estas seguro de que deseas eliminar al usuario: '+rowData.nombre+'?')
              }
             ]}
             options={{
