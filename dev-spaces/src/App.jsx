@@ -8,6 +8,7 @@ import Login from 'pages/login'
 import PublicLayout from 'layout/publicLayout';
 import AddUser from "pages/agregarUsuario";
 import UsersMaster from "pages/usersMasters";
+import UsersTable from "pages/tablaDeUsuarios";
 
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/registroUsuarios" element={<RegistroUsuarios/>}/>
             <Route path="/agregarUsuario" element={<AddUser/>}/>
             <Route path="/usersMasters" element={<UsersMaster/>}/>
+            <Route path="/tablaDeUsuarios" element={<UsersTable/>}/>
             
           {/* <Route element ={<PublicLayout/>}/> */}
         </Routes>
