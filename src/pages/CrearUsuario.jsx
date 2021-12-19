@@ -12,7 +12,7 @@ import { useHistory } from "react-router";
 const CrearUsuario = () => {
     const his = useHistory();
 
-    let nombre, identificacion, clave, perfil
+    let nombre, identificacion, clave, perfil, email
 
     const registrarUsuarioNuevo = async (e) => {
         e.preventDefault()
@@ -20,7 +20,8 @@ const CrearUsuario = () => {
             "nombre": nombre.value,
             "identificacion": parseInt(identificacion.value),
             "perfil": perfil.value,
-            "clave": clave.value
+            "clave": clave.value,
+            "email": email.value
         }
         const response = await crearUser({ variables: { user: nuevoUsuario } })
         if (response?.data?.createUser) {
@@ -42,7 +43,7 @@ const CrearUsuario = () => {
 
     return <div>
         <form>
-            <div className="form-group">
+            <div className=" ">
                 <label>Nombre</label>
                 <input className="form-control" ref={val => nombre = val}></input>
             </div>
@@ -62,6 +63,10 @@ const CrearUsuario = () => {
                     <option value="Admin">Admin</option>
                     <option value="Estudiante">Estudiante</option>
                 </select>
+            </div>
+            <div className="form-group">
+                <label>email</label>
+                <input type="text" className="form-control" ref={val => email = val}></input>
             </div>
             <button className="btn btn-primary" onClick={registrarUsuarioNuevo}>Registrarse</button>
         </form>

@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './styles/styles.css';
+
 
 import {
   ApolloClient,
@@ -9,15 +11,16 @@ import {
   HttpLink,
 } from "@apollo/client";
 
-import Proyectos from './components/Proyectos';
-import CrearProyecto from './components/CrearProyecto';
-import Menu from './components/Menu';
-import ListaUsuarios from './components/ListaUsuarios';
+import Proyectos from './pages/Proyectos';
+import CrearProyecto from './pages/CrearProyecto';
+import Menu from './pages/Menu';
+import ListaUsuarios from './pages/ListaUsuarios';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import NoExiste from './components/NoExiste';
-import Login from './components/Autenticar';
-import EditarProyecto from './components/EditarProyecto';
-import CrearUsuario from './components/CrearUsuario';
+import NoExiste from './pages/NoExiste';
+import Login from './pages/Autenticar';
+import EditarProyecto from './pages/EditarProyecto';
+import CrearUsuario from './pages/CrearUsuario';
+import Principal from './pages/Principal';
 
 
 const httpLink = new HttpLink({ uri: 'http://localhost:9092/graphql' });
@@ -44,7 +47,8 @@ ReactDOM.render(
   <ApolloProvider client={client}>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Login} />
+        <Route exact path="/" component={Principal} />
+        <Route exact path="/login" component={Login} />
         <Route exact path="/usuario/registro" component={CrearUsuario} />
         <Route exact path="/menu" component={Menu} />
         <Route exact path="/usuario" component={ListaUsuarios} />
