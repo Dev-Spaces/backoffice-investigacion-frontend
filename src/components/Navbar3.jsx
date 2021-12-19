@@ -1,12 +1,13 @@
 import React from 'react'
-import Logo from 'media/logo.jpeg'
+// import Logo from 'media/logo.jpeg'
 
 import { Link } from 'react-router-dom'
-import Menu from 'media/menu.png'
+// import Menu from 'media/menu.png'
 
  const btn = document.querySelector("button.mobile-menu-button");
  const menu = document.querySelector(".mobile-menu");
 
+ 
 const Navbar = () => {
     return (
         <nav className='bg-blue-700'>
@@ -15,7 +16,7 @@ const Navbar = () => {
                     <div className='flex space-x-4'>
                         <div>
                             <a href='#' className='flex items-center py-5 px-2 text-gray-700 hover:text-blue-300'>
-                                <img src={Logo} alt='logo' className='h-20 w-25 mr-2'/>
+                                {/* <img src={Logo} alt='logo' className='h-20 w-25 mr-2'/> */}
                             </a>
                         </div>
                         
@@ -33,7 +34,7 @@ const Navbar = () => {
 
                     <div className='md:hidden flex items-center'>
                         <button className='mobile-menu-button'>
-                        <img src={Menu} alt='logo' className='w-10 h-10'/>
+                        {/* <img src={Menu} alt='logo' className='w-10 h-10'/> */}
                         </button>
                     </div>
 

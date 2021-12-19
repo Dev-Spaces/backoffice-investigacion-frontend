@@ -56,7 +56,7 @@ const Login = () => {
                     <p>manejar todo este poder</p>
                     <p className='text-xs mt-32'>Dev Spaces</p>
                 </div>
-                <div className="absolute right-12 bg-white rounded-md p-2 w-44
+                <div className="absolute right-12 bg-white rounded-md p-2 w-48
                 flex flex-col justify-center items-center shadow-xl py-4">
                     <h2 className='text-red-300 mb-3 text-sm font-bold'>Log In </h2>
                     <div className="bg-red-300 shadow-xl rounded-full w-12 h-12
