@@ -70,7 +70,7 @@ const Login = () => {
                 bg-transparent' value={pass}
                 onChange={changeClave}/>
                 <button className='bg-red-400 hover:bg-red-500
-                text-xs text-black w-full mt-4 mb-2 focus:outline-none p-2 rounded' onClick={autenticar}><Link to ='/menu'>Login</Link></button>
+                text-xs text-black w-full mt-4 mb-2 focus:outline-none p-2 rounded' onClick={autenticar}>Login</button>
                 <button className=" bg-red-400 hover:bg-red-500
                 text-xs text-black w-full  mb-6 focus:outline-none p-2 rounded" onClick={registroUsuarioNuevo}>Registro Usuario Nuevo</button>
                 <a href="#" className='text-red-500 mb-5 text-xs'></a>
