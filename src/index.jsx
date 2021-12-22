@@ -24,7 +24,7 @@ import CrearUsuario from './pages/CrearUsuario';
 import Principal from './pages/Principal';
 
 
-const httpLink = new HttpLink({ uri: 'https://devspace2.herokuapp.com' });
+const httpLink = new HttpLink({ uri: 'https://devspace2.herokuapp.com/' });
 
 const authLink = new ApolloLink((operation, forward) => {
   const token = localStorage.getItem('auth_token');
