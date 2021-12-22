@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 localStorage.setItem('auth_token','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlc2l0byI6IkVzdHVkaWFudGUiLCJpYXQiOjE2Mzk0MDAzNzQsImV4cCI6MTYzOTQwNzU3NH0.hbhQJNg60W8zpXCGTnWVi12woPXBO1jz8mG4dNRtNPY')
 
-const httpLink = new HttpLink({uri:'https://devspace2.herokuapp.com/'})
+const httpLink = new HttpLink({uri:'https://protected-citadel-73605.herokuapp.com/'})
 
 const authLink = new ApolloLink((operation,forward)=>{
   const token = localStorage.getItem('auth_token');
